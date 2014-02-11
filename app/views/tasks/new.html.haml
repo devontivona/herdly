@@ -5,7 +5,14 @@
     .form-group
       %input.form-control{placeholder: "Boulder, CO", type: "input"}/
     .form-group
+      %input#exampleDatePicker.form-control.datepicker{placeholder: "Choose Due Date", type: "input"}/
+    .form-group
       .left-inner-addon
         %i.fa.fa-usd
-        %input.form-control{placeholder: "Reward Money", type: "text"}/
+        %input.form-control{placeholder: "Reward Money", type: "text"}
     %button.btn.btn-primary.btn-block{type: "submit"} Create Task
+
+:javascript
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  })
