@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem "twitter-bootstrap-rails"
 gem 'bootstrap-datepicker-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
