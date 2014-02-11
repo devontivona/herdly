@@ -1,0 +1,16 @@
+.container
+  .form-group
+    %input.form-control{placeholder: "Full Name", type: "text"}
+  .form-group
+    .input-group
+      %span.input-group-addon +1
+      %input.form-control{placeholder: "Phone Number", type: "text"}
+  .form-group
+    .input-group
+      %input.form-control{placeholder: "University Email", type: "text"}
+      %span.input-group-addon .edu
+  .form-group
+    %input.form-control{placeholder: "Password", type: "text"}
+  .form-group
+    %input.form-control{placeholder: "Retype Password", type: "text"}
+  %a.btn.btn-primary.btn-block{ href: tasks_path } Sign Up
