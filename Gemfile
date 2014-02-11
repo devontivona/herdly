@@ -7,7 +7,7 @@ gem 'rails_12factor', group: :production
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3', group: :development
+gem 'sqlite3', group: :development
 
 # Use postgres in production
 gem 'pg', group: :production
