@@ -6,9 +6,16 @@
     .form-group
       %input#exampleInputPassword1.form-control{placeholder: "Boulder, CO", type: "input"}/
     .form-group
+      %input#exampleDatePicker.form-control.datepicker{placeholder: "Choose Due Date", type: "input"}/
+    .form-group
       .left-inner-addon
         %i.fa.fa-usd
         %input.form-control{placeholder: "Reward Money", type: "text"}/
-    .form-group
-      %image{height: "100px;", src: "/assets/datepicker.png", width: "100%"}
     %button.btn.btn-primary{type: "submit"} Create Task
+
+
+:javascript
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+  })
+
