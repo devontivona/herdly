@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-datepicker-rails'
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
+# gem 'sqlite3', group: :development
 
 # Use postgres in production
 gem 'pg', group: :production
