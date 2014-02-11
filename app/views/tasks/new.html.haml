@@ -1,15 +1,15 @@
 .container
-  %form{role: "form"}
+  = form_for @task do |f|
     .form-group
-      %input.form-control{placeholder: "Enter Task Title", type: "email"}/
+      %input.form-control{placeholder: "Enter Task Title", type: "email", name: "task[title]"}
     .form-group
-      %input.form-control{placeholder: "Boulder, CO", type: "input"}/
+      %input.form-control{placeholder: "Boulder, CO", type: "input", name: "task[location]"}
     .form-group
-      %input#exampleDatePicker.form-control.datepicker{placeholder: "Choose Due Date", type: "input"}/
+      %input#exampleDatePicker.form-control.datepicker{placeholder: "Choose Due Date", type: "input", name: "task[due_date]"}
     .form-group
       .left-inner-addon
         %i.fa.fa-usd
-        %input.form-control{placeholder: "Reward Money", type: "text"}
+        %input.form-control{placeholder: "Reward Money", type: "text", name: "task[reward]"}
     %button.btn.btn-primary.btn-block{type: "submit"} Create Task
 
 :javascript

@@ -12,9 +12,10 @@
 #
 
 class Task < ActiveRecord::Base
-
+  include ActionView::Helpers::NumberHelper
+  
   def due_date_s
-    due_date.blank? ? "No Due Date" : due_date
+    due_date.blank? ? "No Due Date" : due_date.strftime("%m/%d/%Y")
   end
 
   def reward_s
