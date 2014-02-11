@@ -20,6 +20,7 @@
         #collapse.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
+              %a{ href: tasks_path } All Tasks
               %a{ href: new_task_path } Create Task
               %a{ href: "#" } Sign Out
     = yield

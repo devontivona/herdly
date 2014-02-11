@@ -3,4 +3,4 @@
     .col-xs-12
       .list-group
         - @tasks.each do |task|
-          %a.list-group-item{ href: "#" }= task.title
+          %a.list-group-item{ href: task_path(task) }= task.title

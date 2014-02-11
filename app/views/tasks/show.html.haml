@@ -1,0 +1,17 @@
+.container-fluid
+  .row
+    .col-xs-12
+    
+      .panel.panel-default
+        / Default panel contents
+        .panel-heading= @task.title
+        %ul.list-group
+          %li.list-group-item
+            %b Location: 
+            = @task.location_s
+          %li.list-group-item
+            %b Reward: 
+            = @task.reward_s
+          %li.list-group-item
+            %b Due Date: 
+            = @task.due_date_s
